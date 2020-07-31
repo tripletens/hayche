@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hayche Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-gold navbar-gold" style="background-color: purple;">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+            
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user"></i>
+                        
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                       
+                        <a href="#" class="dropdown-item bg-danger">
+                            <i class="fas fa-power-off"></i> Logout
+                        </a>
+                        
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- side nav goes here  -->
+        <style>
+            a { 
+                color:#fff;
+            };
+            a:hover{
+                color:#c27ac0;
+            }
+            #navmenu{
+                color:#fff;
+            }
+            #navmenu:hover{
+                color:purple;
+                background: White;
+                box-shadow: black 4px;
+            }
+        </style>
+        <!-- Main Sidebar Container sidebar-dark-primary-->
+        <aside class="main-sidebar  elevation-4" style="background:purple;">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link" >
+                <img src="dist/img/Hayche-logo_standard.png" alt="AdminLTE Logo" class="brand-image img-circle"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-hard">Hayche Admin</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" style="color:#f7eeee;" class="d-block">Surname Name </a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                
+                        <li class="nav-item">
+                            <a href="account_info_admin.html" id="navmenu" class="nav-link" >
+                                <i class="nav-icon fas fa-info"></i>
+                                <p>
+                                    Account Info
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="registered_companies_admin.html" id="navmenu" class="nav-link" >
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Registered Companies
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="registered_applicants_admin.html" id="navmenu" class="nav-link" >
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Registered Applicants
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="all_users_admin.html" id="navmenu"  class="nav-link" >
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    All Users
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="payment_info_admin.html" id="navmenu" class="nav-link" >
+                                <i class="nav-icon fas fa-file"></i>
+                                <p>
+                                    Payment Information
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact_us_admin.html" id="navmenu" class="nav-link">
+                                <i class="nav-icon fas fa-phone"></i>
+                                <p>
+                                    Contact Us
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="edit_information_admin.html" id="navmenu" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Edit Account Information
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- side nav ends here  -->
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Dashboard</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#" style="color: #c27ac0">Home</a></li>
+                                <li class="breadcrumb-item active"> Edit Information</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-md-4">
+                           <div class="card card-purple card-outline">
+                               <div class="card-body box-profile">
+                                   <div class="text-center">
+                                       <img class="profile-user-img img-fluid img-circle"
+                                           src="dist/img/user4-128x128.jpg" alt="User profile picture">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile">Upload Profile Picture</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input form-control"
+                                                        id="exampleInputFile">
+                                                    <label class="custom-file-label" for="exampleInputFile">Choose
+                                                        file</label>
+                                                </div>
+
+                                            </div>
+                                            <br>
+                                            <a href="#" class="btn btn-block"
+                                                style="background: purple; color:gold;"><b>Upload Profile
+                                                    Picture</b></a>
+                                        </div>
+                                   </div>
+
+                                   <h3 class="profile-username text-center">Surname Firstname</h3>
+
+                                   <p class="text-muted text-center">Brief Description </p>
+
+                                   <ul class="list-group list-group-unbordered mb-3">
+                                       <li class="list-group-item">
+                                           <b>Email Address </b> <a class="float-right">company@gmail.com</a>
+                                       </li>
+                                       <li class="list-group-item">
+                                           <b>Address</b> <a class="float-right">25 company road</a>
+                                       </li>
+                                       <li class="list-group-item">
+                                           <b>City </b> <a class="float-right">Ikeja </a>
+                                       </li>
+                                       <li class="list-group-item">
+                                           <b>State</b> <a class="float-right">Lagos</a>
+                                       </li>
+                                       <li class="list-group-item">
+                                           <b>Country</b> <a class="float-right">Nigeria</a>
+                                       </li>
+                                   </ul>
+
+
+                               </div>
+                               <!-- /.card-body -->
+                           </div>
+
+
+                       </div>
+                       <div class="card card-purple card-outline col-md-8" style="margin:0 auto;">
+
+                           <div class="card-header">
+                               <h3 class="card-title">Edit Profile Information </h3>
+                           </div>
+
+                           <!-- /.card-header -->
+                           <div class="card-body">
+                               <form role="form">
+                                   <div class="card-body">
+                                       <div class="form-group">
+                                           <label for="exampleInputEmail1">Username</label>
+                                           <input type="text" class="form-control" id="exampleInputUsername1"
+                                               placeholder="Enter Username">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputEmail1">Email address</label>
+                                           <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Enter email">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputsurname1">Surname</label>
+                                           <input type="text" class="form-control" id="exampleInputsurname1"
+                                               placeholder="Enter Surname ">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputfname1">First Name</label>
+                                           <input type="text" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Enter First Name">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Address</label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Enter Address
+                                               </textarea>
+                                       </div>
+
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">About me </label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Enter About me 
+                                               </textarea>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Education </label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Tell Us About your Education 
+                                               </textarea>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Skills </label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Tell Us About your Skills
+                                               </textarea>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="" class="">
+                                               Gender</label>
+                                           <div class="custom-control custom-radio ">
+                                               <input class="custom-control-input" type="radio" id="customRadio1"
+                                                   name="customRadio">
+                                               <label for="customRadio1" class="custom-control-label">
+                                                   Male</label>
+
+                                           </div>
+                                           <div class="custom-control custom-radio ">
+                                               <input class="custom-control-input " type="radio" id="customRadio2"
+                                                   name="customRadio">
+                                               <label for="customRadio2" class="custom-control-label">
+                                                   Female</label>
+                                           </div>
+                                       </div>
+
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Date of Birth</label>
+                                           <input type="date" class="form-control" id="exampleInputdate"
+                                               placeholder="Enter Date of Birth">
+                                       </div>
+
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Personal Phone Number</label>
+                                           <input type="number" class="form-control" id="exampleInputdate"
+                                               placeholder="Enter Personal Phone Number">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Whatsapp Phone Number</label>
+                                           <input type="number" class="form-control" id="exampleInputdate"
+                                               placeholder="Enter Whatsapp Phone Number">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Skype</label>
+                                           <input type="text" class="form-control" id="exampleInputdate"
+                                               placeholder="Enter Skype Id">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Area of Expertise</label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Enter Area of Expertise
+                                               </textarea>
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputfname1">State</label>
+                                           <input type="text" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Enter State">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Nationality</label>
+                                           <input type="text" class="form-control" id="exampleInputdate"
+                                               placeholder="Which country are you from? ">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Change Password</label>
+                                           <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">Confirm Password</label>
+                                           <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1">More Information About me </label>
+                                           <textarea class="form-control" cols="20" rows="5">
+                                                   Enter Notes 
+                                               </textarea>
+                                       </div>
+
+                                   </div>
+                                   <!-- /.card-body -->
+
+                                   <div class="card-footer">
+                                       <button type="submit" class="btn "
+                                           style="background: purple;color:gold;float:right;">Submit</button>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2019 </strong>
+            All rights reserved.
+            <!-- <div class="float-right d-none d-sm-inline-block">
+                
+            </div> -->
+        </footer>
+
+       
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
+</body>
+
+</html>
